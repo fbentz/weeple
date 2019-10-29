@@ -1,0 +1,60 @@
+.Hero {
+  background: #171717;
+  display: grid;
+  grid-template-columns: 5fr 8fr;
+  align-items: center;
+
+  @include tablet {
+    display: block;
+  }
+
+  &__picture {
+    background: #171717;
+    position: relative;
+    text-align: right;
+
+    @include tablet {
+      img {
+        width: 50%;
+      }
+      text-align: center;
+    }
+
+
+    &::after {
+      content:"";
+      background-image: linear-gradient(rgba(255, 255, 255, 0) 87%, #171717 98%);
+      // linear-gradient(rgba(255, 255, 255, 0) 58%, #171717 76%);
+      // radial-gradient(circle, rgba(255,255,255,0) 64%, rgba(23,23,23,1) 87%);
+      position: absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+    }
+  }
+
+  &__head {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 400;
+    color: #F2E8E4;
+    margin:0;
+  }
+
+  &__text {
+    color: #F2E8E4;
+    max-width: 578px;
+  }
+
+  &__content {
+    display: grid;
+    place-content: center;
+
+    @include tablet {
+      background-color: #171717;
+      padding: 30px;
+    }
+  }
+
+}

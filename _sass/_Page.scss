@@ -1,0 +1,8 @@
+.Page {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+  &__hero {
+    display: grid;
+  }
+}
