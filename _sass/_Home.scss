@@ -1,16 +1,12 @@
 .Home {
-  scroll-snap-type: y mandatory;
   height: 100vh;
-  overflow-y: scroll;
 
   &__hero {
-    scroll-snap-align: start;
     display: grid;
     height: 100vh;
   }
 
   &__gallery {
-    scroll-snap-align: start;
     height: 100vh;
   }
 }
