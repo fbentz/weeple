@@ -5,7 +5,8 @@
   align-items: center;
 
   @include tablet {
-    display: block;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr auto;
   }
 
   &__picture {
